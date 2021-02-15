@@ -54,8 +54,9 @@ html_template = `
     <div id="ops"></div>
     <div id="hud"></div>
     <!-- Replace the following line with your hosted copy of gribsia. Or don't! I'm an HTML comment, not a cop. -->
-    <script type="text/javascript" src="https://raw.githubusercontent.com/mernonsquirnon/gribsia/master/gribsia.js"></script>
-    <!-- Script tag including source of actual game goes here -->
+    <script type="text/javascript" src="gribsia/gribsia.js"></script>
+    <!-- Script tag including source of actual game goes here: -->
+    <script type="text/javascript" src="ur_game.js"></script>
   </body>
 </html>
 `
