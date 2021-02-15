@@ -32,6 +32,7 @@ if (typeof rooms == "undefined") {
 if (typeof showhud == "undefined") {showhud = true;}
 if (typeof showcommentary == "undefined") {showcommentary = false;}
 if (typeof time == "undefined") {time = "";}
+var show_options_in_console_mode = true;
 
 //gribsia can run in either a web browser, or on the command line using node. We detect if we are on the command line by the lack of a window object.
 if(typeof window === 'undefined'){
@@ -92,7 +93,7 @@ if(typeof window === 'undefined'){
     console.log(commentary.innerHTML);
     console.log(hud.innerHTML);
     for (var key of Object.keys(optionmenu)){
-      console.log(key);
+      show_options_in_console_mode && console.log(key);
     }
     rl.question('> ', command_line_prompt_loop);
   }
