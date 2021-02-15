@@ -34,6 +34,31 @@ if (typeof showcommentary == "undefined") {showcommentary = false;}
 if (typeof time == "undefined") {time = "";}
 var show_options_in_console_mode = true;
 
+//Gribsia relies conceptually on either running on the command line or in an html template like this:
+html_template = `
+<!DOCTYPE html>
+<!-- Example html to host gribsia -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Name</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <div id="title"></div>
+    <div id="himg"></div>
+    <div id="nook"></div><br><br>
+    <div id="description"></div><br>
+    <div id="commentary" style="color:red"></div>
+    <br>
+    <div id="ops"></div>
+    <div id="hud"></div>
+    <script type="text/javascript" src="gribsia.js"></script>
+    <!-- Script tag including source of actual game goes here -->
+  </body>
+</html>
+`
+
 //gribsia can run in either a web browser, or on the command line using node. We detect if we are on the command line by the lack of a window object.
 if(typeof window === 'undefined'){
   console.log("console detected");
