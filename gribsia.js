@@ -1,3 +1,5 @@
+//Dedication: In beginner programming classes classes, after everyone learns how to make windows and buttons and manipulate variables in a basic manner, the coolest kid in class is always going to make a basic, stupid, button-clicking-based game. A pure expression, hewn with simple tools, of the joy of creativity. Gribsia was conceived in honor of this.
+
 /* This is gribsia, the structured button-and-text-adventure engine. It is the sister of gribsaba, a prototype unstructured engine I never released as it was too mess, and the daughter of gribso, the pure text adventure engine I haven't yet had call to make.
    Conceptually, every gribsia game is just one big (javascript) object, in the following form:
 rooms = {
@@ -54,7 +56,7 @@ html_template = `
     <div id="ops"></div>
     <div id="hud"></div>
     <!-- Replace the following line with your hosted copy of gribsia. Or don't! I'm an HTML comment, not a cop. -->
-    <script type="text/javascript" src="gribsia/gribsia.js"></script>
+    <script type="text/javascript" src="https://mernonsquirnon.github.io/gribsia/gribsia.js"></script>
     <!-- Script tag including source of actual game goes here: -->
     <script type="text/javascript" src="ur_game.js"></script>
   </body>
